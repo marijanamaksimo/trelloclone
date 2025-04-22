@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Clone</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Dashboard / Board Overview -->
+     <div id="dashboard" class="container">
+        <header>
+          <h1>Task Board Pilot</h1>
+          <button id="create-board-btn" class="btn btn-primary">
+            <i class="fas fa-plus"></i> Create Board
+          </button>
+        </header>
+        
+        <div class="boards-container">
+          <!-- Boards will be dynamically added here -->
+        </div>
+      </div>
+      
+      <!-- Board View (initially hidden) -->
+      <div id="board-view" class="container" style="display: none;">
+        <header>
+          <div class="board-header">
+            <button id="back-to-dashboard" class="btn btn-secondary">
+              <i class="fas fa-arrow-left"></i> Back
+            </button>
+            <h2 id="board-title">Board Title</h2>
+            <div class="board-actions">
+              <button id="edit-board-btn" class="btn btn-small">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button id="delete-board-btn" class="btn btn-small btn-danger">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </header>
+        
+        <div id="lists-container" class="lists-container">
+          <!-- Lists will be dynamically added here -->
+        </div>
+        
+        <div class="add-list-container">
+          <button id="add-list-btn" class="btn btn-secondary">
+            <i class="fas fa-plus"></i> Add List
+          </button>
+        </div>
+      </div>
+  </body>
+</html>
+      
